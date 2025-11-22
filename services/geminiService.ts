@@ -20,7 +20,7 @@ const getFallbackResponse = (query: string): string => {
   // Contact / 联系方式
   if (q.includes('contact') || q.includes('email') || q.includes('phone') || q.includes('linkedin') || 
       q.includes('联系') || q.includes('邮箱') || q.includes('电话')) {
-    return `You can reach Jiajun at ${RESUME_DATA.contact.email} or ${RESUME_DATA.contact.phone}. Check out his LinkedIn: ${RESUME_DATA.contact.linkedin}\n\n(您可以发送邮件至 ${RESUME_DATA.contact.email} 或拨打 ${RESUME_DATA.contact.phone} 联系我。)`;
+    return `You can reach Jiajun at ${RESUME_DATA.contact.email} or ${RESUME_DATA.contact.phone}. Check out her LinkedIn: ${RESUME_DATA.contact.linkedin}\n\n(您可以发送邮件至 ${RESUME_DATA.contact.email} 或拨打 ${RESUME_DATA.contact.phone} 联系我。)`;
   }
   
   // Education / 教育背景
@@ -33,14 +33,14 @@ const getFallbackResponse = (query: string): string => {
   if (q.includes('experience') || q.includes('work') || q.includes('job') || q.includes('intern') || 
       q.includes('company') || q.includes('经历') || q.includes('工作') || q.includes('实习')) {
     const companies = RESUME_DATA.experience.map(e => e.company).join(', ');
-    return `Jiajun has professional experience at: ${companies}. For example, at AWS, he worked on distributed systems.\n\n(我曾在 ${companies} 实习，拥有丰富的软件工程经验。)`;
+    return `Jiajun has professional experience at: ${companies}. For example, at AWS, she worked on distributed systems.\n\n(我曾在 ${companies} 实习，拥有丰富的软件工程经验。)`;
   }
 
   // Projects / 项目经验
   if (q.includes('project') || q.includes('app') || q.includes('dashboard') || q.includes('web') || 
       q.includes('项目') || q.includes('作品')) {
     const projects = RESUME_DATA.projects.map(p => p.title).join(', ');
-    return `Some of his key projects include: ${projects}. Feel free to ask about specific tech stacks!\n\n(我的主要项目包括：${projects}。)`;
+    return `Some of her key projects include: ${projects}. Feel free to ask about specific tech stacks!\n\n(我的主要项目包括：${projects}。)`;
   }
 
   // Skills / 技能
