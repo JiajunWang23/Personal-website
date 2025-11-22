@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiajun Wang | Statistics & CS Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              // Light Water Lilies Palette (Monet)
+              background: '#f0fdfa', // Pale Teal (Sky reflection)
+              surface: '#ffffff', // White glass
+              primary: '#134e4a', // Deep Teal (Text)
+              secondary: '#475569', // Slate (Subtext)
+              accent: '#8b5cf6', // Soft Violet/Lavender (Flowers)
+              'accent-light': '#ddd6fe', // Very light violet
+              'water-blue': '#bae6fd', // Light Blue
+              'leaf-green': '#86efac', // Soft Green
+            },
+            backgroundImage: {
+              'gradient-monet': 'linear-gradient(135deg, #f0fdfa 0%, #eff6ff 50%, #f5f3ff 100%)',
+            },
+            boxShadow: {
+              'glass': '0 8px 32px 0 rgba(19, 78, 74, 0.1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f0fdfa;
+        color: #134e4a;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      
+      /* Light Glassmorphism utilities */
+      .glass {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 20px rgba(19, 78, 74, 0.05);
+      }
+      
+      .glass-hover:hover {
+        background: rgba(255, 255, 255, 0.85);
+        border-color: rgba(139, 92, 246, 0.3); /* Violet accent border on hover */
+        box-shadow: 0 8px 30px rgba(139, 92, 246, 0.1);
+        transform: translateY(-2px);
+      }
+
+      ::selection {
+        background: #ddd6fe; /* Soft violet selection */
+        color: #134e4a;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
